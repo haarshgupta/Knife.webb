@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <LINK rel="STYLESHEET" href="con-style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;1,400&family=Raleway:ital,wght@0,200;1,100&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<title>CONTACT page</title>
+</head>
+<body>
+<div class="container">
+    <h1>Contact with us </h1>
+    <p>we would love to respond to your queries and help you succce.Feel free to get in touch with us.</p>
+<div class="contact-box">
+    <div class="contact-left">  
+        <h3>Sent your request!</h3>
+        <!-- <form name="myform" onclick="sendemail()"; reset(); return=false > -->
+            <form name="myform" action="main.php" method="post">
+            <div class="input-row"> 
+                <div class="input-group" id="name">
+                    <label>Name</label>
+                    <input type="text" placeholder="Eg-Binod" name="fname" minlength="3" id="name" required><b><span class="formerror"></span></b>
+                </div>
+                <div class="input-group" id="email">
+                    <label>Email</label>
+                    <input type="email" id=emaill placeholder="Eg-iamBinod@gmail.com"  name="femail" required><b><span class="formerror"></span></b>
+                </div>
+            </div>
+            <div class="input-row">
+                <div class="input-group" id="phone">
+                    <label>Phone</label>
+                    <input type="number" id="phone" placeholder="Eg-8905323583" name="fpohone" id="fphone" required><b><span class="formerror"></span></b>
+                </div>
+                <div class="input-group" id="hii">
+                    <label>Gender</label><br><br>
+                    <input type="radio" value="male" name="hii" id="male">Male
+                    <input type="radio" value="female" name="hii" id="femail">Female <b><span class="formerror"></span></b>
+               </div>
+            </div>
+            <label>Message</label><br>
+            <textarea cols="40" rows="5" placeholder="your message..." required></textarea>
+           <!-- <button type="submit">SEND</button>-->
+           <input class="button1" type="submit" value="submit">
+        </form>
+    </div>
+    <div class="contact-right">
+        <h3>Reach us</h3>
+        <table id="table">
+            <tr>
+                <th style="padding: 0">Email::</th>
+                <td>iamaster@gmail.com</td>
+            </tr>
+            <tr>
+                <th style="padding: 0">Phone::</th>
+                <td>8008562954</td>
+            </tr>
+            <tr>
+                <th style="padding: 0">Address::</th>
+                <br>
+                <td>32/A3,sai samarth,rgb road tendulkar marg<br><br>
+                opposite to stadium mumbai prabhadevi<br><br>
+                maharashtra 400067.
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+</div>
+<button class="pre" type="button"><a href="about.html"><i class="fa-thin fa-arrow-left"></i>pre</a></button>
+<button type="button"><a href="app.html"><i class="fa-thin fa-arrow-left"></i>next</a></button>
+
+<!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+  function sendemail(){
+        Email.send({
+            Host : "smtp.gmail.com",
+            Username : "iamharshgupta2004@gmail.com",
+            Password : "harshthegreat",
+            To : 'iamharshgupta2004@gmail.com',
+            From : document.getElementById("emaill").value,
+            Subject : "Contact form",
+            Body : "name:"+document.getElementById("name").value
+            +"<br> Email:"+document.getElementById("emaill").value
+            +"<br> Phone:"+document.getElementById("phone").value
+            +"<br> Gender:"+document.getElementById("male").value
+            +"<br> Gender:"+document.getElementById("Female").value
+        }).then(
+          message => alert("Form submited successfully")
+        );
+    }
+    
+</script> -->
+</body>
+<!-- <script>
+    function seterror(id,error){
+//sets error inside tag of id
+    element=document.getElementById(id);
+    element.getElementsByclassname('formerror')[0].innerHTML=error;
+    }
+
+    function validateform(){
+    var returnval = true;
+
+    var name =document.forms['myform']["fname"].value;
+    if (name.length<5){
+    seterror("name","length of name is too short");
+    returnval=false;
+    }
+
+    return returnval;
+
+    }
+
+    let phone = document.getElementById('fphone');
+    console.log(phone);
+
+</script> -->
+</html>

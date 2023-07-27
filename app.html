@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="app.css">
+<title>Application page</title>
+</head>
+<body>
+
+<div id="header">
+<h1>Application page</h1>
+</div>
+
+<!-- <button class="a" onclick="">@</button> -->
+<div class="section"> 
+    <img src="PETTY.png" alt="#" class="img">
+    <h3 class="heading">Ryusen Fukakuryu</h3>
+    <p>About Ryusen Fukakuryu - Ryusen Hamono was founded in 1948 as a knife sharpening company. They worked with companies like Takefu Special Steel as early as the 1970s to develop high-quality knives made with stainless steel, at a time when most other knife makers were struggling to produce decent stainless steel knives.
+    <!-- <button type="button" onclick="https://knifewear.com/products/ryusen-fukakuryu-petty-135mm">Read More</button> -->
+    <a id="aa" href="https://knifewear.com/products/ryusen-fukakuryu-petty-135mm">More....</a>
+</p> 
+
+<button id="header-butt">Click Me</button>   
+
+</div>
+    <!-- <button type="button" id="butt">If not intrested in knife!!</button>
+    <script>
+      var input =document.getElementById("butt");
+      input.addEventListener("click",function(e){
+      var name = prompt("What is your name");
+      document.body.innerHTML="<h1> This Web-Site is not for you "+ name +"!</h1>";
+      });
+    </script> -->
+    
+<script>
+   const header = document.getElementById("header");
+   const headderbutt = document.getElementById("header-butt");
+
+   headderbutt.addEventListener("click",() =>
+   {
+    header.style.transform="scale(1,2)";
+  // header.style.transform="translateX(30px)";
+    header.style.transition="1s";
+   });
+</script>
+
+
+</div>
+</body>
+</html>

@@ -1,0 +1,181 @@
+.clearfix::after{
+    content: '';
+    display: block;
+    clear:both;
+}
+.content{
+    width: 100%;
+    margin: 30px auto 30px;
+    border: 1px solid #e6bf83;
+    height: 70%;
+}
+.content .main-content{
+    width:100%;
+   /* border: 1px solid black;*/
+}
+.content .main-content .recnet-post-title{
+    margin: 20px;
+}
+.content .main-content .post{
+    width:95%;
+    height: 270px;
+    margin: 10px auto;
+    border-radius: 5px;
+    background: white;
+    position: relative;
+}
+.content .main-content .post .post-preview .read-more{   /* yaa nahi kam keya ha*/
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    border: 1px solid #deb887;
+    background:transparent;
+    color: #deb887 !important;
+    
+}
+.content .main-content .post .post-preview .read-more:hover{   /* yaa nahi kam keya ha*/
+    background:#deb887;
+    color: white !important;
+    transition: .25s;
+
+}
+.content .main-content .post .post-image{
+    width: 40%;
+    height: 100%;
+    float: left;
+}
+.content .main-content .post .post-preview{
+    padding: 60px;
+    float: right;
+    width: 50%;
+}
+.post-link-but{
+    padding: .5rem 1rem;
+    background:#deb887;
+    color:white;
+    border:1px solid transparent;
+    border-radius: .25px; /* yaa nahi kam keya ha*/
+    text-decoration: none;
+}
+.post-link-but:hover{
+    color:white ;
+    background:#b99364;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    background:#111;
+    margin-bottom: 100%;
+    height: 30% !important;
+}
+.footercontainer{
+    width: 100%;
+    padding:70px 30px 20px;
+}
+.socialicon{
+    display: flex;
+    justify-content: center;
+}
+.socialicon a{
+    text-decoration: none;
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 50%;
+/*fault*/
+}
+.socialicon a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+}
+.socialicon a :hover{
+    transition: 0.5s;
+    background-color: #111;
+}
+.socialicon a :hover i{
+    color: white;
+    transition: 0.5s;
+} 
+.footernav{
+    margin: 30px 0;
+}
+.footernav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.footernav ul li a{
+color: white;
+margin: 20px;
+text-decoration: none;
+font-size: 1.3em;
+opacity: 0.7;
+transition: 0.5s;;
+}
+.footernav ul li a :hover{
+/*opacity: 1;*/
+}
+.footerbottom{
+    text-align: center;
+    background-color: #000;
+    padding: 20px;
+}
+.footerbottom p{
+    color: white;
+}
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1;
+    font-weight: 400;
+    margin:0px 5px;
+}
+@media(max-width:700px){
+    .footernav ul{
+        flex-direction: column;
+    }
+    .footernav ul li{
+        width:100%;
+        text-align: center;
+        margin: 10px;
+    }
+}
